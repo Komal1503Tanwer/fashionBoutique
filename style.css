@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?familyfamily=Poppins:wght@500@&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.container{
+    background-color: rgb(254,209,230);
+    height: 100vh;
+    width: 100%;
+}
+/* add img logo  */
+.container img{
+    height: 13rem;
+    position: absolute;
+    top: -1rem;
+    left: 40px;
+}
+.container .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    width: 70%;
+    margin: auto;
+}
+.navbar .logo{
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Allura', cursive;
+
+}
+.nav-list{
+    display: flex;
+    gap: 2.5rem;
+}
+.nav-list li{
+    list-style-type: none;
+}
+.nav-list a{
+    text-decoration: none;
+    color: rgb(0, 0, 128);
+    font-size: 1.1rem;
+    letter-spacing: .03rem;
+}
+/* hero-section create */
+.hero{
+    display: flex;
+    align-items: center;
+    height: calc(100vh -12vh); width: 90%;
+    margin: auto;
+}
+.content h1{
+    font-size: 3rem;
+    color: black;
+    line-height: 4.4rem;
+    text-transform: capitalize;
+    /* font-family: 'Allura', cursive; */
+
+}
+.content p{
+    color: rgb(35, 35, 35);
+    font-size: 1.1rem;
+    max-width: 85%;
+    margin: 1.8rem 0;
+}
+.content button{
+    padding: 1rem 2rem;
+    color: white;
+    background-color: rgb(19,19,37);
+    font-size: 1.3rem;
+    border: 2px solid black;
+    transition: .5s ease-in-out;
+    margin: 1.5rem 0;
+
+}
+.content button:hover{
+    background-color: rgb(254,209,230);
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.hero .content{
+    flex: 1;
+    margin-top: 8rem;
+}
+/* right-side box img  */
+.hero .box{
+    display: flex;
+    align-items: center;
+    gap :4rem;
+    flex: 2;
+}
+.box .card{
+    width: 100%;
+    height: 25rem;
+    background-position: center;
+    background-size: cover;
+}
+.card:nth-child(1){
+      margin-top: 7rem;
+      background-image: url('/img/img1.avif');
+}
+.card:nth-child(2){
+  background-image: url('/img/img2.avif');
+}
+.card:nth-child(3){
+    margin-bottom: 7rem;
+    background-image: url('/img/img3.avif');
+}
